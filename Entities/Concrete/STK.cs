@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Entities.Concrete
 {
-    public class STK : IEntity
+    public class Stk : IEntity
     {
         public int Id { get; set; }
         public string MalKodu { get; set; }

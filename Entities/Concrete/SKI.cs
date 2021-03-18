@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Entities.Concrete
 {
-    public class SKI : IEntity
+    public class Ski : IEntity
     {
         public int Id { get; set; }
         public short IslemTur { get; set; }
