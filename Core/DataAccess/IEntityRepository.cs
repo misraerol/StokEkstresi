@@ -1,10 +1,9 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 
-namespace DataAccess.Abstract
+namespace Core.DataAccess
 {
     //generic constraint
     // class: references tip olmalı demek,
@@ -12,6 +11,7 @@ namespace DataAccess.Abstract
     //new ile IEntity olmamasını sağladım
     public interface IEntityRepository<T> where T:class , IEntity, new()
     {
+        //CRUD operasyonları yazıldı
         List<T> GetAll(Expression<Func<T, bool>> filter = null);
         T Get(Expression<Func<T, bool>> filter);
         void Add(T entity);
