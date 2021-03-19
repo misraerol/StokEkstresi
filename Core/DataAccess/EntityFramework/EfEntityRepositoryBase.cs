@@ -41,7 +41,7 @@ namespace Core.DataAccess.EntityFramework
 
             }
         }
-
+  
         public List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null)
         {
             using (TContext context = new TContext())
@@ -52,7 +52,7 @@ namespace Core.DataAccess.EntityFramework
 
             }
         }
-
+ 
         public void Update(TEntity entity)
         {
             using (TContext context = new TContext())

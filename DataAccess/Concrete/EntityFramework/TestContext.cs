@@ -10,11 +10,11 @@ namespace DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDb:Database=Test;
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=Test;
 Trusted_Connection=true");
         }
 
-        public DbSet<Ski> SKI { get; set; }
+        public DbSet<Sti> STI { get; set; }
         public DbSet<Stk> STK { get; set; }
     }
 }

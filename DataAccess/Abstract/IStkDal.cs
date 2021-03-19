@@ -8,5 +8,7 @@ namespace DataAccess.Abstract
 {
     public interface IStkDal:IEntityRepository<Stk>
     {
+        List<FormDto> GetForm();
+        
     }
 }
